@@ -3,48 +3,45 @@
 <html lang="en">
     <%@include file="WEB-INF/jspf/head.jspf" %>
 <body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
       <div class="one-half column" style="margin-top: 5%">
         <h4>Peloqueria</h4>
         <p>Si deseas registrate como usuario usa el siguiente formulario</p>
-          <form>
+        <form action="ClienteAnadirController.do" method="post">
             <div class="row">
               <div class="">
-                <label for="exampleEmailInput">Nombre</label>
-                <input class="u-full-width" type="text" placeholder="Nombre" id="exampleEmailInput">
+                <label for="txtNombres">Nombre</label>
+                <input class="u-full-width" type="text" placeholder="Nombre" id="txtNombres">
               </div>
               <div class="">
-                <label for="exampleEmailInput">Apellidos</label>
-                <input class="u-full-width" type="text" placeholder="Apellidos" id="exampleEmailInput">
+                <label for="txtApellidos">Apellidos</label>
+                <input class="u-full-width" type="text" placeholder="Apellidos" id="txtApellidos">
               </div>
             </div>
             <div class="row">
               <div class="six columns">
-                <label for="exampleRecipientInput">Tipo Documento</label>
-                <select class="u-full-width" id="exampleRecipientInput">
+                <label for="txtTipoDocumento">Tipo Documento</label>
+                <select name="txtTipoDocumento" class="u-full-width" id="txtTipoDocumento">
                   <option value="1">DNI</option>
                   <option value="Option 2">xd</option>
                   <option value="Option 3">xd</option>
                 </select>
               </div>
               <div class="six columns">
-                <label for="exampleEmailInput">Numero Documento</label>
-                <input class="u-full-width" type="email" placeholder="12345678" id="exampleEmailInput">
+                <label for="txtNumDocumento">Numero Documento</label>
+                <input class="u-full-width" type="text" placeholder="12345678" id="txtNumDocumento">
               </div>
               
             </div>
          <div class="row">
               <div class="six columns">
-                <label for="Correo">Correo</label>
-                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+                <label for="txtCorreo">Correo</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="txtCorreo">
               </div>
               <div class="six columns">
-                <label for="exampleRecipientInput">Telefono</label>
-                <input class="u-full-width" type="text" placeholder="Telefono" id="exampleEmailInput">
+                <label for="txtTelefono">Telefono</label>
+                <input class="u-full-width" type="text" placeholder="Telefono" id="txtTelefono">
               </div>
             </div>
             <label for="exampleMessage">Message</label>
@@ -53,13 +50,10 @@
               <input type="checkbox">
               <span class="label-body">Send a copy to yourself</span>
             </label>
-            <input class="button-primary" type="submit" value="Submit">
+            <button class="button-primary" type="submit" value="Submit">Mandar</button>
           </form>
       </div>
     </div>
   </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
